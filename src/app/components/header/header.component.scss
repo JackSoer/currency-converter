@@ -1,0 +1,25 @@
+.header {
+  height: 60px;
+  width: 100vw;
+
+  background-color: rgb(0, 167, 0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__currency {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid rgb(255, 238, 0);
+    border-right: 1px solid rgb(255, 238, 0);
+    font-size: 25px;
+
+    &:last-child {
+      border-left: none;
+    }
+  }
+}

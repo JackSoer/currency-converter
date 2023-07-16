@@ -1,0 +1,41 @@
+<div class="converter">
+  <div class="converter__section">
+     <input
+      type="number"
+      class="converter__input"
+      placeholder="Enter amount of currency"
+      min="0"
+      [(ngModel)]="amount1"
+      (ngModelChange)="onInputChange(true)"
+    />
+    <select
+      class="converter__select"
+      [(ngModel)]="from"
+      (ngModelChange)="onInputChange(true)"
+    >
+      <option value="UAH" class="convrter__select-item">UAH</option>
+      <option value="USD" class="convrter__select-item">USD</option>
+      <option value="EUR" class="convrter__select-item">EUR</option>
+    </select>
+  
+  </div>
+  <div class="converter__section">
+    <input
+      type="number"
+      class="converter__input"
+      placeholder="Enter amount of currency"
+      min="0"
+      [(ngModel)]="amount2"
+      (ngModelChange)="onInputChange(false)"
+    />
+    <select
+      class="converter__select"
+      [(ngModel)]="to"
+      (ngModelChange)="onInputChange(false)"
+    >
+      <option value="UAH" class="convrter__select-item">UAH</option>
+      <option value="USD" class="convrter__select-item">USD</option>
+      <option value="EUR" class="convrter__select-item">EUR</option>
+    </select>
+  </div>
+</div>
